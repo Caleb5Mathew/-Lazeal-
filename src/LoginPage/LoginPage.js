@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userActions } from '../_actions';
-import img from 'C:/Users/ezekm/.git/gitlazealclones/Frontend/src/_images/headerpic.jpg'
-import '../_designs/login'
+import './login'
 
 class LoginPage extends React.Component {
+  
     constructor(props) {
         super(props);
 
@@ -47,8 +47,8 @@ class LoginPage extends React.Component {
               <div className="headerbackdrop">
                 <div className="outerheader">
                   <div className = "headerbackdrop">
-                    <img src = {img} />
-                    <img src = {require('C:/Users/ezekm/OneDrive/Pictures/Coding/Photoshop/output/test.05.jpg')} alt = "dang"
+                    <img src = {require('C:/Users/ezekm/OneDrive/Pictures/Coding/Photoshop/output/test.05.jpg')} />
+                    <img src = {require('C:/Users/ezekm/.git/gitlazealclones/Frontend/src/_images/headerpic.jpg')} alt = "dang"
                       className = "logo"
                     />
                       <div className = "outerheaderlogo">
