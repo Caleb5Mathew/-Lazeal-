@@ -11,9 +11,10 @@ module.exports = {
             { test: /\.jsx?$/,
             loader: 'babel-loader'
         },
+        { test: /\.(png|gif|jpg|cur)$/i, loader: 'url-loader', options: { limit: 8192 } },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: require.resolve('url-loader')
+                loader: require.resolve('file-loader')
                 },{
                     test: /\.(png|jpg|gif)$/i,
                     use: {

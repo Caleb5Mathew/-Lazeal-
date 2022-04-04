@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { userActions } from '../_actions';
 import './login'
-
+import img from './headerpic.jpg'
 class LoginPage extends React.Component {
   
     constructor(props) {
@@ -47,8 +47,8 @@ class LoginPage extends React.Component {
               <div className="headerbackdrop">
                 <div className="outerheader">
                   <div className = "headerbackdrop">
-                    <img src = {require('C:/Users/ezekm/OneDrive/Pictures/Coding/Photoshop/output/test.05.jpg')} />
-                    <img src = {require('C:/Users/ezekm/.git/gitlazealclones/Frontend/src/_images/headerpic.jpg')} alt = "dang"
+                    <img src = {require("C:/Users/ezekm/OneDrive/Pictures/Coding/Photoshop/output/test.05.jpg")} />
+                    <img src = {img}
                       className = "logo"
                     />
                       <div className = "outerheaderlogo">
@@ -61,8 +61,9 @@ class LoginPage extends React.Component {
                   <input id="check01" type="checkbox" name="menu" />
                     <label for="check01">Menu</label>
                       <ul class="submenu">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
+                        <li>
+                        <Link to="/register" className="btn btn-link">Register</Link></li>
+                        <li><Link to="/homepage" className="btn btn-link">Register</Link></li>
                       </ul>
         
         
